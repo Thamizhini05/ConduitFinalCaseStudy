@@ -24,7 +24,7 @@ public class UpdateArticlePage {
 	    WebElement enterTags;
 	    @FindBy(xpath="//button[contains(text(),'Update Article')]")
 	    WebElement update_btn;
-	    @FindBy(xpath = "(//a[@class=\"author\"])[1]")
+	    @FindBy(xpath = "(//a[@class='author'])[1]")
    	    WebElement profileIcon;
 	     
 

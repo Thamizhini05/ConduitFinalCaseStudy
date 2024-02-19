@@ -51,5 +51,6 @@ public class NewArticlePage {
 
 	   public String duplicateArticleValidate() {
 		   return duplicateArticle.getText();
+		   
 	   }
 }

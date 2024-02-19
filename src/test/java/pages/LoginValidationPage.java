@@ -20,8 +20,6 @@ public class LoginValidationPage {
     WebElement password;
     @FindBy(xpath="//button[contains(text(),'Login')]")
     WebElement login_btn;
-//    @FindBy(xpath="//div[contains(text(),'Thamizhini Athiappan')]")
-//    WebElement validcheck;
     @FindBy(xpath="//li[contains(text(),'Wrong email/password combination')]")
     WebElement invalidcheck;
     

@@ -18,7 +18,7 @@ public class UpdateArticlePage {
 	    WebElement articleTitle;
 	    @FindBy(xpath="//input[@class='form-control ' and @name='description']")
 	    WebElement articleAbout;
-	    @FindBy(xpath="//textArea[@rows='8']")
+	    @FindBy(xpath="//textArea[@placeholder='Write your article (in markdown)']")
 	    WebElement textArea;
 	    @FindBy(xpath="//input[@placeholder='Enter tags']")
 	    WebElement enterTags;

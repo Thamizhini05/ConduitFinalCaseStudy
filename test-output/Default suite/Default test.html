@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Default test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>6/0/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>5/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Mon Feb 19 15:00:37 IST 2024</td>
+<td>Started on:</td><td>Mon Feb 19 15:10:52 IST 2024</td>
 </tr>
-<tr><td>Total time:</td><td>11 seconds (11351 ms)</td>
+<tr><td>Total time:</td><td>15 seconds (15244 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -67,6 +67,39 @@ function toggleAllBoxes() {
 </tr>
 </table><p/>
 <small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='runners.MyTestRunner.runScenario()'><b>runScenario</b><br>Test class: runners.MyTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User Create the new Article", "Article Page Function"</td>
+<td><div><pre>java.lang.AssertionError: expected [Testing in] but found [Testing in IT]
+	at org.testng.Assert.fail(Assert.java:110)
+	at org.testng.Assert.failNotEquals(Assert.java:1413)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:149)
+	at org.testng.Assert.assertEquals(Assert.java:131)
+	at org.testng.Assert.assertEquals(Assert.java:655)
+	at org.testng.Assert.assertEquals(Assert.java:665)
+	at stepDefinitions.OrderStepDef.should_display_the_new_article_title(OrderStepDef.java:109)
+	at ✽.Should display the new Article Title(file:///D:/workspace/ConduitFinalCaseStudy/src/test/resources/features/ArticlePage.feature:32)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1177427556", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1177427556'><pre>java.lang.AssertionError: expected [Testing in] but found [Testing in IT]
+	at org.testng.Assert.fail(Assert.java:110)
+	at org.testng.Assert.failNotEquals(Assert.java:1413)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:149)
+	at org.testng.Assert.assertEquals(Assert.java:131)
+	at org.testng.Assert.assertEquals(Assert.java:655)
+	at org.testng.Assert.assertEquals(Assert.java:665)
+	at stepDefinitions.OrderStepDef.should_display_the_new_article_title(OrderStepDef.java:109)
+	at ✽.Should display the new Article Title(file:///D:/workspace/ConduitFinalCaseStudy/src/test/resources/features/ArticlePage.feature:32)
+</pre></div></td>
+<td>1</td>
+<td>runners.MyTestRunner@4b29d1d2</td></tr>
+</table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
 <tr><td><b>Test method</b></td>
@@ -75,6 +108,11 @@ function toggleAllBoxes() {
 <td width="10%"><b>Time (seconds)</b></td>
 <td><b>Instance</b></td>
 </tr>
+<tr>
+<td title='runners.MyTestRunner.runScenario()'><b>runScenario</b><br>Test class: runners.MyTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Valid Login into app", "Article Page Function"</td>
+<td></td>
+<td>1</td>
+<td>runners.MyTestRunner@4b29d1d2</td></tr>
 <tr>
 <td title='runners.MyTestRunner.runScenario()'><b>runScenario</b><br>Test class: runners.MyTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User update the Article", "Article Page Function"</td>
 <td></td>
@@ -86,19 +124,9 @@ function toggleAllBoxes() {
 <td>1</td>
 <td>runners.MyTestRunner@4b29d1d2</td></tr>
 <tr>
-<td title='runners.MyTestRunner.runScenario()'><b>runScenario</b><br>Test class: runners.MyTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User Create the new Article", "Article Page Function"</td>
-<td></td>
-<td>1</td>
-<td>runners.MyTestRunner@4b29d1d2</td></tr>
-<tr>
-<td title='runners.MyTestRunner.runScenario()'><b>runScenario</b><br>Test class: runners.MyTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Valid Login into app", "Article Page Function"</td>
-<td></td>
-<td>1</td>
-<td>runners.MyTestRunner@4b29d1d2</td></tr>
-<tr>
 <td title='runners.MyTestRunner.runScenario()'><b>runScenario</b><br>Test class: runners.MyTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Invalid Login into app", "Article Page Function"</td>
 <td></td>
-<td>4</td>
+<td>7</td>
 <td>runners.MyTestRunner@4b29d1d2</td></tr>
 <tr>
 <td title='runners.MyTestRunner.runScenario()'><b>runScenario</b><br>Test class: runners.MyTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User Create the Article with duplicate Title", "Article Page Function"</td>

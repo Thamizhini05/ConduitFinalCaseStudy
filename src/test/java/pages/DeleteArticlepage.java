@@ -16,7 +16,7 @@ public class DeleteArticlepage {
 	WebElement deleteBtn;
 	@FindBy(xpath="//div[contains(text(),'Articles not available.')]")
 	WebElement check;
-	@FindBy(xpath = "(//a[@class=\"author\"])[1]")
+	@FindBy(xpath = "(//a[@class='author'])[1]")
 	WebElement profile;
 
 
